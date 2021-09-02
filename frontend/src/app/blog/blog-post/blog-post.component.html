@@ -1,0 +1,30 @@
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th class="text-center" style="width:200px"> Usuário </th>
+            <th class="text-center"> {{objetoPostComComentarios.informacoesPost.title}} </th>
+        </tr>
+    </thead>
+    <tr>
+        <td class="text-center" scope="row" style="width:200px"> <a href="javascript:void(0);" (click)="informacoesUsuarioPagina()">
+            <img height="150" width="150" src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-outline-user-icon-and-symbol-isolated-png-image_5045526.jpg"
+                 alt="Visit the MDN site">
+                 {{usuario.name}}</a> </td>
+        <td>{{objetoPostComComentarios.informacoesPost.body}}</td>
+    </tr>
+</table>
+<hr style="width:100%">
+<table class="table table-striped">
+    <thead class="thead-dark">
+    <tr>
+        <th> Nome </th>
+        <th> Email </th>
+        <th> Comentário </th>
+    </tr>
+    </thead>
+    <tr *ngFor="let item of objetoPostComComentarios.comentarios">
+        <td> {{item.name}} </td>
+        <td> {{item.email}} </td>
+        <td> {{item.body}} </td>
+    </tr>
+</table>

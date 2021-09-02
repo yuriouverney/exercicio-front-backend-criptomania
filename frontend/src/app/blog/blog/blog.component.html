@@ -1,0 +1,17 @@
+<table class="table table-striped">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="row">usuario</th>
+        <th>titulo</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let item of objetoCompleto.posts">
+        <td scope="row" style="width:200px"> <a href="javascript:void(0);" (click)="informacoesUsuario(item.userId)">
+            <img height="150" width="150" src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-outline-user-icon-and-symbol-isolated-png-image_5045526.jpg"
+                 alt="Visit the MDN site">
+          </a> </td>
+        <td><a href="javascript:void(0);" (click)="informacoesPost(item.id)">{{item.title}}</a></td>
+    </tr>
+</tbody>
+</table>

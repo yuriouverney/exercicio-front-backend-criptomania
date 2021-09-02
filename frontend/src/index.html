@@ -1,13 +1,60 @@
+<style>
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  line-height: 1.5;
+  width: 30%;
+  background-color: grey;
+  color: white;
+  text-align: center;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+</style>
+
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Frontend</title>
   <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+  <ul>
+    <li><a href="calculadora">Calculadora</a></li>
+    <li><a href="blog">Blog</a></li>
+  </ul>
   <app-root></app-root>
+  <div>
+  <footer class="footer">
+    Author: Yuri Braga Ouverney
+    <br><a href="mailto:yuri.ouverney@hotmail.com">yuri.ouverney@hotmail.com</a><br>
+  </footer>
+</div>
+</div>
 </body>
 </html>

@@ -1,0 +1,74 @@
+<form [formGroup]="userForm">
+
+    <div class="form-row">
+        <div class="col">
+            <div class="form-group">
+                <div class="input-group input-group-sm">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Nome</span>
+                    </div>
+                    <input type="text" class="form-control" formControlName="name">
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <div class="input-group input-group-sm">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Usuário</span>
+                    </div>
+                    <input type="text" class="form-control" formControlName="username">
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <div class="input-group input-group-sm">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Email</span>
+                    </div>
+                    <input type="text" class="form-control" formControlName="email">
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <div class="input-group input-group-sm">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Website</span>
+                    </div>
+                    <input type="text" class="form-control" formControlName="website">
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <div class="input-group input-group-sm">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Endereço</span>
+                    </div>
+                    <input type="text" class="form-control" formControlName="street">
+                    <input type="text" class="form-control" formControlName="suite">
+                    <input type="text" class="form-control" formControlName="zipcode">
+                    <input type="text" class="form-control" formControlName="city">
+                    <input type="text" class="form-control" formControlName="lat">
+                    <input type="text" class="form-control" formControlName="lng">
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <div class="input-group input-group-sm">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Empresa</span>
+                    </div>
+                    <input type="text" class="form-control" formControlName="companyName">
+                    <input type="text" class="form-control" formControlName="companyBs">
+                    <input type="text" class="form-control" formControlName="companycatchPhrase">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</form>
