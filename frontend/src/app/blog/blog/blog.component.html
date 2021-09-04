@@ -7,9 +7,9 @@
 </thead>
 <tbody>
     <tr *ngFor="let item of objetoCompleto.posts">
-        <td scope="row" style="width:200px"> <a href="javascript:void(0);" (click)="informacoesUsuario(item.userId)">
+        <td scope="row" style="width:200px" class="text-center"> <a href="javascript:void(0);" (click)="informacoesUsuario(item.userId)" > {{objetoCompleto.usuarios[item.userId-1].name}}
             <img height="150" width="150" src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-outline-user-icon-and-symbol-isolated-png-image_5045526.jpg"
-                 alt="Visit the MDN site">
+                 alt="Visit the MDN site"> 
           </a> </td>
         <td><a href="javascript:void(0);" (click)="informacoesPost(item.id)">{{item.title}}</a></td>
     </tr>
