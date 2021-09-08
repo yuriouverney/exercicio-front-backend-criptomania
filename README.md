@@ -1,4 +1,4 @@
-Projeto criado para teste prático proposto pela empresa Criptomania.
+Projeto criado para teste prático proposto pela empresa Criptonomia.
 Haviam dois teste, um para ser desenvolvido em BackEnd(calculadora) e outro para FrontEnd(blog). Resolvi integrar os dois em apenas um repositório e conectá-los tanto no front
 quanto no back.
 
